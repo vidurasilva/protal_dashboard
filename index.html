@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <title>Employee Portel | one place for collect data</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="./application.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+ <style>
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+
+      }
+
+      p.one{
+         border-style: solid;
+         border-width: 5px;
+      }
+      
+    </style>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('formCtrl', function($scope) {
+            $scope.firstname = "John";
+        });
+    </script>
+</head>
+<body class="bjy">
+
+
+<div class="container">
+ 
+
+ <div class="col-md-4" >
+  <div class="by acy adh">
+  <div class="dp">
+   <div class="fj">
+      <div class="mu blf abk">
+        <div class="na" style="background-image: url(assets/img/iceland.jpg);"></div>
+        <div class="mv arx" >
+          <a href="https://bootstrap-themes.github.io/application/profile/index.html">
+       
+             <img src="./avatar-dhg.png" class="img-fluid" alt="Responsive image" width="236" height="236"> 
+          </a>
+
+          <h6 class="mw">
+            <a class="bjx" href="https://bootstrap-themes.github.io/application/profile/index.html">Samith Basnayaka</a>
+          </h6>
+
+          <p class="abk">I wish i was a little bit taller, wish i was a baller, wish i had a car…&nbsp;also.</p>
+
+          <ul class="blh">
+            <li class="bli">
+              <a href="" class="bjx" data-toggle="modal">
+                Employee Number
+                <h6 class="aal">
+                <label class="control-label" style="color: #336666">{{Enum}}</label>
+                </h6>
+              </a>
+            </li>
+
+            <li class="bli">
+              <a href="" class="bjx" data-toggle="modal">
+                EPF Number
+                <h6 class="aal">
+                   <label class="control-label" style="color: #336666">{{EPFnum}}</label>
+                </h6>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mu sh sp abk">
+        <div class="mv">
+          <h6 class="abd">Companies <small>· <a href="">Edit</a></small></h6>
+          <ul class="dc atd">
+            <li><span class="asz h awk abc"></span>compane name <a href="">SE</a>
+            </li><li><span class="asz h bbn abc"></span>Location <a href="">Colombo 10, SL</a>
+            </li><li><span class="asz h bcw abc"></span>Field <a href="">Kurunegala, SL</a>
+      </li><li><span class="asz h bax abc"></span>LinkedIn <a href="">URL</a>
+          </li></ul>
+        </div>
+      </div>
+
+    </div>
+</div>
+</div>
+</div>
+
+  <div class="row-md-*">
+           <div class="col-md-4">
+            
+                  <div class="mu sh sp abk">
+                     <div class="mv">
+                  <form>
+                  <div class="form-group" style="margin-top: 20px;" >
+                    <label for="exampleInputEmail1">Email address</label><br>
+                    <label class="control-label" style="color: #336666">{{Email}}</label> <!--datadase connecting point-->
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">First Name</label><br>
+                    <label class="control-label" style="color: #336666">{{Fname}}</label><!--datadase connecting point--> 
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Last Name</label><br>
+                    <label class="control-label" style="color: #336666">{{Lname}}</label><!--datadase connecting point--> 
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Employee Number</label><br>
+                    <label class="control-label" style="color: #336666">{{Enum}}</label><!--datadase connecting point--> 
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">EPF Number</label><br>
+                    <label class="control-label" style="color: #336666">{{EPFnum}}</label><!--datadase connecting point--> 
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Companies</label><br>
+                    <label class="control-label" style="color: #336666">{{Companies}}</label><!--datadase connecting point--> 
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Birth Day</label><br>
+                    <label class="control-label" style="color: #336666">{{Birthday}}</label><!--datadase connecting point--> 
+                  </div>
+                  
+                  <!-- Trigger the modal with a button -->
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Edit</button>
+                  <!-- Password change the modal with a button -->
+                  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Change Password</button>
+                </form>
+           </div>
+         </div>
+        </div>
+<div class="col-md-4">
+
+  <div class="mu sh sp abk">
+      <div class="mv">
+      <iframe src="https://calendar.google.com/calendar/embed?src=cloudpartners.biz_mmfv7u05m6dpnrf2k1dcoe4kpg%40group.calendar.google.com&ctz=Asia/Colombo" style="border: 0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
+  </div>
+
+</div>
+</div>
+
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"></button>
+          <h4 class="modal-title">Profile Header</h4>
+        </div>
+        <div class="modal-body">
+         
+             <form>
+                  <div class="form-group" >
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="text" class="form-control" ng-model="Email" id="exampleInputEmail1" placeholder="{{Email}}" >
+                  </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          
+                           
+                          <input type="password" class="form-control" ng-model="Password" id="exampleInputPassword1" placeholder="{{Password}}">
+                        </div>
+                           <div class="form-group" >
+                            <label for="exampleInputEmail1">First Name</label>
+                            <input type="text" class="form-control" ng-model="Fname" id="exampleInputEmail1" placeholder="{{Fname}}" >
+                          </div>
+                              <div class="form-group">
+                                <label for="exampleInputPassword1">Last Name</label>
+                               
+                                 
+                                <input type="text" class="form-control" ng-model="Lname" id="exampleInputPassword1" placeholder="{{Lname}}">
+                              </div>
+                                 <div class="form-group" >
+                                   <label for="exampleInputEmail1">Employee Number</label>
+                                   <input type="text" class="form-control" ng-model="Enum" id="exampleInputEmail1" placeholder="{{Enum}}" >
+                                   </div>
+                                    <div class="form-group">
+                                      <label for="exampleInputPassword1">EPF Number</label>
+
+                                      <input type="text" class="form-control" ng-model="EPFnum" id="exampleInputPassword1" placeholder="{{EPFnum}}">
+                                    </div>
+                                        <div class="form-group" >
+                                            <label for="exampleInputEmail1">Companies</label>
+                                            <input type="text" class="form-control" ng-model="Companies" id="exampleInputEmail1" placeholder="{{Companies}}" >
+                                          </div>
+                                            <div class="form-group">
+                                              <label for="exampleInputPassword1">Birthday</label>
+                                             
+                                               
+                                              <input type="data" class="form-control" ng-model="Birthday" id="exampleInputPassword1" placeholder="{{Password}}">
+                                            </div>
+              <!--    <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">Example block-level help text here.</p>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Check me out
+                    </label>
+                  </div>-->
+                   <!-- Subbutton -->
+                  <button type="submit" class="btn btn-default">Submit</button>
+                  <!-- Trigger the modal with a button -->
+                 </form>
+            
+         
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ 
+</div>
+</div>
+
+
+
+</body>
+</html>
+
